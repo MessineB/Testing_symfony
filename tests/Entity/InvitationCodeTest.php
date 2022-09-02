@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 class InvitationCodeTest extends KernelTestCase
 {
     public function testValidEntity() {
-        $code = ( new InvitationCode() );
+        $code =  new InvitationCode() ;
             $code->setcode('12345');
             $code->setdescription("Ceci est une description valide Wallah");
             $code->setExpireAt(new \DateTime());
